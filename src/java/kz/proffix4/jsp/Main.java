@@ -24,7 +24,7 @@ public class Main extends HttpServlet {
                 double a = Double.parseDouble(request.getParameter("a"));
                 double b = Double.parseDouble(request.getParameter("b"));
                 double c = Double.parseDouble(request.getParameter("c"));
-                double d = Math.pow(a, 2) - 4 * a * c;
+                double d = Math.pow(b, 2) - 4 * a * c;
                 double x1 = (-b + Math.sqrt(d)) / (2 * a);
                 double x2 = (-b - Math.sqrt(d)) / (2 * a);
                 resultQE = new ResultQE(x1, x2);
