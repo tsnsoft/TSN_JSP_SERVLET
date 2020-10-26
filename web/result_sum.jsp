@@ -11,7 +11,7 @@
         <a href="Main">Назад</a><br/><br/>
         Сумма всех цифр:<br/>
         <%
-            double sum = (double) request.getAttribute("sum");
+            double sum = ((Double) request.getAttribute("sum")).doubleValue();
             out.println(String.format("sum= %.3f<br/>", sum));
         %>
 </html>
